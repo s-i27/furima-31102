@@ -61,11 +61,11 @@ Things you may want to cover:
 
 | Column            | Type       | Options                        |
 | ------------------| ---------- | ------------------------------ |
-| postcode          | text       | null: false                    |
-| prefecture_id     | text       | null: false                    |
-| building          | text       | null: false                    |
-| block             | text       | null: false                    |
-| city              | text       | null: false                    |
+| postcode          | string     | null: false                    |
+| prefecture_id     | string     | null: false                    |
+| building          | string     | null: false                    |
+| block             | string     | null: false                    |
+| city              | string     | null: false                    |
 | phone_number      | integer    | null: false                    |
 | buys              | references | null: false,foreign_key: true  |
 
