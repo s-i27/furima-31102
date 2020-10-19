@@ -67,11 +67,11 @@ Things you may want to cover:
 | block             | string     | null: false                    |
 | city              | string     | null: false                    |
 | phone_number      | string     | null: false                    |
-| buys              | references | null: false,foreign_key: true  |
+| buy               | references | null: false,foreign_key: true  |
 
 ### Association
 
-- has_many :buys
+- belongs_to :buy
 
 
 ## itemsテーブル
