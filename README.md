@@ -41,6 +41,7 @@ Things you may want to cover:
 ### Association
 
 - has_many :items
+- has_many :buys
 
 ## buysテーブル
 
