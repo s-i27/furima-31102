@@ -63,7 +63,7 @@ Things you may want to cover:
 | ------------------| ---------- | ------------------------------ |
 | postcode          | string     | null: false                    |
 | prefecture_id     | integer    | null: false                    |
-| building          | string     | null: false                    |
+| building          | string     |                                |
 | block             | string     | null: false                    |
 | city              | string     | null: false                    |
 | phone_number      | string     | null: false                    |
