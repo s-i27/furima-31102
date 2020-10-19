@@ -66,7 +66,7 @@ Things you may want to cover:
 | building          | string     | null: false                    |
 | block             | string     | null: false                    |
 | city              | string     | null: false                    |
-| phone_number      | integer    | null: false                    |
+| phone_number      | string     | null: false                    |
 | buys              | references | null: false,foreign_key: true  |
 
 ### Association
