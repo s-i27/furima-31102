@@ -52,7 +52,7 @@ Things you may want to cover:
 
 ### Association
 
-- has_many :users, through: buy_users
+- belongs_to ：user
 - belongs_to :addres
 - belongs_to :item
 
