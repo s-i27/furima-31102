@@ -41,21 +41,6 @@ Things you may want to cover:
 ### Association
 
 - has_many :items
-- has_many :buys, through: buy_users
-
-
-## buy_users テーブル
-
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| buy    | references | null: false, foreign_key: true |
-| user   | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :buy
-- belongs_to :user
-
 
 ## buysテーブル
 
