@@ -53,7 +53,7 @@ Things you may want to cover:
 ### Association
 
 - belongs_to ：user
-- belongs_to :addres
+- has_one :addres
 - belongs_to :item
 
 
