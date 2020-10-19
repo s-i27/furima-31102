@@ -80,11 +80,11 @@ Things you may want to cover:
 | ------------------| ---------- | ------------------------------ |
 | name              | string     | null: false                    |
 | comment           | string     | null: false                    |
-| category          | string     | null: false                    |
-| status            | string     | null: false                    |
-| ship_charge_at    | string     | null: false                    |
-| ship_form_area    | string     | null: false                    |
-| ship_form_date    | string     | null: false                    |
+| category          | integer    | null: false                    |
+| status            | integer    | null: false                    |
+| ship_charge_at    | integer    | null: false                    |
+| ship_form_area    | integer    | null: false                    |
+| ship_form_date    | integer    | null: false                    |
 | price             | integer    | null: false                    |
 | image             |            | active storage(GEM)            |
 | user              | references | null: false,foreign_key: true  |
