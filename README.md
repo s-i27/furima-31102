@@ -32,10 +32,10 @@ Things you may want to cover:
 | email           | string     | null: false,unique: true       |
 | password        | string     | null: false                    |
 | nickname        | string     | null: false,unique: true       |
-| last_name       | text       | null: false                    |
-| first_name      | text       | null: false                    |
-| last_name_kana  | text       | null: false                    |
-| first_name_kana | text       | null: false                    |
+| last_name       | string     | null: false                    |
+| first_name      | string     | null: false                    |
+| last_name_kana  | string     | null: false                    |
+| first_name_kana | string     | null: false                    |
 | birthday_year   | integer    | null: false                    |
 | birthday_month  | integer    | null: false                    |
 | birthday_date   | integer    | null: false                    |
