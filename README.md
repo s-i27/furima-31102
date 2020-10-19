@@ -78,13 +78,13 @@ Things you may want to cover:
 
 | Column            | Type       | Options                        |
 | ------------------| ---------- | ------------------------------ |
-| name              | text       | null: false                    |
+| name              | string     | null: false                    |
 | comment           | string     | null: false                    |
-| category          | text       | null: false                    |
-| status            | text       | null: false                    |
-| ship_charge_at    | text       | null: false                    |
-| ship_form_area    | text       | null: false                    |
-| ship_form_date    | text       | null: false                    |
+| category          | string     | null: false                    |
+| status            | string     | null: false                    |
+| ship_charge_at    | string     | null: false                    |
+| ship_form_area    | string     | null: false                    |
+| ship_form_date    | string     | null: false                    |
 | price             | integer    | null: false                    |
 | image             |            | active storage(GEM)            |
 | user              | references | null: false,foreign_key: true  |
