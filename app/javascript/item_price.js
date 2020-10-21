@@ -13,4 +13,4 @@ function post (){
 
 }
 
-window.addEventListener('load', post);
+window.addEventListener('click', post);
