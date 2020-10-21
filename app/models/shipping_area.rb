@@ -1,7 +1,6 @@
-class ShippingArea < ApplicationRecord
-  class Genre < ActiveHash::Base
+class ShippingArea < ActiveHash::Base
   self.data = [
-    { id: 1, name: '--' },
+    { id: 1, name: '---' },
     { id: 2, name: '北海道' },
     { id: 3, name: '青森県' },
     { id: 4, name: '岩手県' },
@@ -50,5 +49,4 @@ class ShippingArea < ApplicationRecord
     { id: 47, name: '鹿児島県' },
     { id: 48, name: '沖縄県' },
   ]
-  end
 end
