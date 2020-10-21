@@ -23,27 +23,27 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Comment can't be blank")
       end
       it 'category_idが1(デフォルト)だと登録できない' do
-        @item.category_id = '1'
+        @item.category_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include('Category Select')
       end
       it 'status_idが1(デフォルト)だと登録できない' do
-        @item.status_id = '1'
+        @item.status_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include('Status Select')
       end
       it 'shipping_at_idが1(デフォルト)だと登録できない' do
-        @item.shipping_at_id = '1'
+        @item.shipping_at_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include('Shipping at Select')
       end
       it 'shipping_area_idが1(デフォルト)だと登録できない' do
-        @item.shipping_area_id = '1'
+        @item.shipping_area_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include('Shipping area Select')
       end
       it 'shipping_date_idが1(デフォルト)だと登録できない' do
-        @item.shipping_date_id = '1'
+        @item.shipping_date_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include('Shipping date Select')
       end
@@ -53,7 +53,7 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Price can't be blank")
       end
       it 'priceが半角英数字以外だと登録できない' do
-        @item.price = '３'
+        @item.price = 'a'
         @item.valid?
         expect(@item.errors.full_messages).to include('Price Half-width number')
       end

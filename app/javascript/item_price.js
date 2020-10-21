@@ -7,7 +7,6 @@ function post (){
     const profitInput = document.getElementById("profit");
     addTaxDom.innerHTML = Math.floor(inputValue*0.1);
     profitInput.innerHTML = Math.floor(inputValue*0.9);
-    console.log(addCalcTaxDom)
   })
 
 
