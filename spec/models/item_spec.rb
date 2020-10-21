@@ -72,7 +72,7 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include("Image can't be blank")
       end
-      it 'ユーザーが紐付いていないとツイートは保存できない' do
+      it 'ユーザーが紐付いていないとitemは保存できない' do
         @item.user = nil
         @item.valid?
         expect(@item.errors.full_messages).to include('User must exist')
