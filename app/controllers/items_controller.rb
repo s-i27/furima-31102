@@ -32,22 +32,20 @@ class ItemsController < ApplicationController
     item = Item.find(params[:id])
     item.destroy
     redirect_to root_path
-  end 
+  end
 
   private
-    def item_params
-      params.require(:item).permit(:image, :name, :comment, :category_id, :shipping_area_id, :shipping_at_id, :shipping_date_id, :status_id, :price).merge(user_id: current_user.id)
-    end
 
-    def move_to_index
-      item = Item.find(params[:id])
-      if current_user.id != item.user_id
-        redirect_to action: :index 
-      end
-    end
-  
-    def item_find
-      @item = Item.find(params[:id])
-    end
-    
+  def item_params
+    params.require(:item).permit(:image, :name, :comment, :category_id, :shipping_area_id, :shipping_at_id, :shipping_date_id, :status_id, :price).merge(user_id: current_user.id)
+  end
+
+  def move_to_index
+    item = Item.find(params[:id])
+    redirect_to action: :index if current_user.id != item.user_id
+  end
+
+  def item_find
+    @item = Item.find(params[:id])
+  end
 end
