@@ -51,7 +51,6 @@ RSpec.describe OrderAddres, type: :model do
         @order_addres.valid?
         expect(@order_addres.errors.full_messages).to include("Phone number Input only number")
       end
-
     end 
   end 
 end

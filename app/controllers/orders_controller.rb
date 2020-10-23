@@ -10,7 +10,7 @@ class OrdersController < ApplicationController
     @item = Item.find(params[:item_id])
     @order_addres = OrderAddres.new(order_address_params)
     
-    if @order_addres.valid?
+    if  @order_addres.valid?
         @order_addres.save
         redirect_to root_path
     else
