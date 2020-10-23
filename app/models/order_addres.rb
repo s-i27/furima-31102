@@ -3,11 +3,11 @@ class OrderAddres
   attr_accessor :postcode, :prefecture_id, :building, :block, :city, :phone_number,:user_id, :item_id
 
   with_options presence: true do
-  validates :postcode
-  validates :prefecture_id
-  validates :block
-  validates :city
-  validates :phone_number
+    validates :postcode
+    validates :prefecture_id
+    validates :block
+    validates :city
+    validates :phone_number
   end
 
     # ジャンルの選択が「--」の時は保存できないようにする
@@ -15,8 +15,6 @@ class OrderAddres
     # 正規表現の指定
   validates :postcode,     format: { with: /\A\d{3}[-]\d{4}\z/, message: 'Input correctly' }
   validates :phone_number, format: { with: /\A\d{11}\z/, message: 'Input only number' }
-
-
 
   def save
     # 購入情報の情報を保存

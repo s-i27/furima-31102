@@ -12,7 +12,7 @@ class OrdersController < ApplicationController
     
     if @order_addres.valid?
         @order_addres.save
-        redirect_to action: :index
+        redirect_to root_path
     else
       render action: :index
     end
