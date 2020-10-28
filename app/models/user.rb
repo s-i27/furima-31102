@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :items
+  has_many :orders
 
   # 大文字小文字を区別したい場合は{ case_sensitive: true }を仕様（DB側は区別しない）
   validates :nickname,         presence: true, uniqueness: { case_sensitive: true }
