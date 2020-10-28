@@ -1,14 +1,13 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!, only: [:index]
   before_action :move_to_root, only: [:index]
+  before_action :item_find, only: [:index, :create]
   
   def index
-    @item = Item.find(params[:item_id])
     @order_addres = OrderAddres.new
   end
 
   def create
-    @item = Item.find(params[:item_id])
     @order_addres = OrderAddres.new(order_address_params)
     if  @order_addres.valid?
         pay_item
@@ -37,6 +36,10 @@ class OrdersController < ApplicationController
   def move_to_root
     item = Item.find(params[:item_id])
     redirect_to root_path if current_user.id == item.user_id || Order.where(item_id: item.id).exists?
+  end
+
+  def item_find
+    @item = Item.find(params[:item_id])
   end
 
 end
