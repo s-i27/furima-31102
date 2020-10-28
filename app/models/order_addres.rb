@@ -1,8 +1,9 @@
 class OrderAddres
   include ActiveModel::Model
-  attr_accessor :postcode, :prefecture_id, :building, :block, :city, :phone_number,:user_id, :item_id
+  attr_accessor :postcode, :prefecture_id, :building, :block, :city, :phone_number,:user_id, :item_id ,:token
 
   with_options presence: true do
+    validates :token
     validates :postcode
     validates :prefecture_id
     validates :block

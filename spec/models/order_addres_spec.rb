@@ -51,6 +51,11 @@ RSpec.describe OrderAddres, type: :model do
         @order_addres.valid?
         expect(@order_addres.errors.full_messages).to include("Phone number Input only number")
       end
+      it "tokenが空では登録できないこと" do
+        @order_addres.token = nil
+        @order_addres.valid?
+        expect(@order_addres.errors.full_messages).to include("Token can't be blank")
+      end
     end 
   end 
 end
